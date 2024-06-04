@@ -26,10 +26,11 @@ header {
     font-family: fantasy, sans-serif; 
 }
 .home {
-    height: 130vh;
     display: flex;
     justify-content: space-around;
-    padding: 0 20%;
+    align-items: center;
+    height: 80vh;
+    padding: 0 10%;
 }
 .Ingredients{
     height: 60vh;
@@ -40,12 +41,12 @@ header {
 
 }
 .imageChild2 {
-    margin-left: 150px;
+    margin-left: 80px;
     margin-right: 50px;
 }
 .image_baked-oats {
     display: flex;
-    justify-content: space-around;
+
     width: 250px;
     height: 280px;
     border-radius: 30%;
@@ -103,12 +104,23 @@ b {
     border: 1px solid black;
 }
 
-footer {
+footer { 
     background-color: #2c3e50;
     color: white;
     text-align: center;
     padding: 1em 0;
-    position: relative;
+    position: bottom;
     bottom: 0;
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    .home-content {
+        min-width: 600px;
+    }
+}
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
 }
